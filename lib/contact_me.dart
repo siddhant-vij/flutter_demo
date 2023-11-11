@@ -14,15 +14,16 @@ class ContactMeScreen extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-            child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ProfileCard(),
-            Separator(),
-            PhoneCard(),
-            EmailCard(),
-          ],
-        )),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ProfileCard(),
+              Separator(),
+              PhoneCard(),
+              EmailCard(),
+            ],
+          ),
+        ),
       ),
     );
   }
@@ -81,12 +82,13 @@ class Separator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: 32.0,
-        width: 160.0,
-        child: Divider(
-          color: Colors.teal.shade100,
-          thickness: 1.0,
-        ));
+      height: 32.0,
+      width: 160.0,
+      child: Divider(
+        color: Colors.teal.shade100,
+        thickness: 1.0,
+      ),
+    );
   }
 }
 
